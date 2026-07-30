@@ -1,4 +1,4 @@
-# design-reviewer
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=28&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=design-reviewer;Evidence-bounded+design+review.)](https://git.io/typing-svg)
 
 Evidence-bounded design review. The input limits the claim.
 
