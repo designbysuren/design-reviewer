@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- Static render of fixture-ProjectPanel.tsx with identical defects.
+     Used to produce fixture-screenshot.png so a reviewer can be given
+     an image and nothing else. -->
+<html lang="en">
+<head><meta charset="utf-8"><title>Project</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: -apple-system, Inter, "Segoe UI", sans-serif; background:#fff; color:#0f172a; }
+  .wrap { padding:13px; position:relative; height:700px; overflow:hidden; }
+  h1 { font-size:24px; font-weight:700; margin:0; }
+  h3 { font-size:18px; font-weight:600; margin:16px 0 0; }
+  .summary { display:grid; grid-template-columns:repeat(4,1fr); gap:7px; margin-top:8px; }
+  .label { color:#94a3b8; font-size:14px; display:block; }
+  .val { margin:2px 0 0; font-size:15px; }
+  .status { display:flex; align-items:center; gap:8px; margin-top:16px; }
+  .dot { width:8px; height:8px; border-radius:50%; background:#22c55e; }
+  .status span.text { color:#64748b; font-size:15px; }
+  .cards { display:flex; gap:16px; margin-top:24px; }
+  .card { border:1px solid #e2e8f0; border-radius:8px; padding:16px; flex:1; }
+  .card p.k { color:#94a3b8; font-size:14px; margin:0; }
+  .card p.v { font-size:30px; font-weight:700; margin:4px 0 0; }
+  input { margin-top:24px; border:1px solid #e2e8f0; border-radius:4px; padding:0 12px; height:28px; outline:none; width:280px; font-size:14px; }
+  ul { list-style:none; padding:0; margin:16px 0 0; }
+  li { display:flex; align-items:center; justify-content:space-between; padding:8px 0; }
+  li .title { height:20px; width:260px; white-space:nowrap; overflow:hidden; font-size:15px; }
+  .icons { display:flex; gap:4px; }
+  .icons button { width:28px; height:28px; display:flex; align-items:center; justify-content:center; border:none; background:none; cursor:pointer; color:#64748b; }
+  .chip { position:absolute; right:16px; top:37px; background:#6365f1; color:#fff; border-radius:4px; padding:8px 12px; font-size:14px; }
+  .bar { position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid #e2e8f0; padding:16px; display:flex; gap:12px; justify-content:flex-end; }
+  .bar button { background:#6366f1; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-weight:600; font-size:15px; cursor:pointer; }
+  svg { width:14px; height:14px; }
+</style></head>
+<body>
+<div class="wrap">
+  <h1>Northwind Migration</h1>
+  <h3>Overview</h3>
+  <div class="summary">
+    <div><span class="label">Owner</span><p class="val">A. Fernandes</p></div>
+    <div><span class="label">Created</span><p class="val">12 Mar 2026</p></div>
+    <div><span class="label">Pending</span><p class="val">12 pending</p></div>
+    <div><span class="label">Completed</span><p class="val">148</p></div>
+    <div><span class="label">Region</span><p class="val">eu-west-2</p></div>
+    <div><span class="label">Tier</span><p class="val">Enterprise</p></div>
+    <div><span class="label">Activity</span><p class="val">Processed 1,284 items in 2h 14m</p></div>
+  </div>
+  <div class="status"><span class="dot"></span><span class="text">All systems operational</span></div>
+  <div class="cards">
+    <div class="card"><p class="k">Open</p><p class="v">31</p></div>
+    <div class="card"><p class="k">Pending</p><p class="v">12</p></div>
+    <div class="card"><p class="k">Blocked</p><p class="v">3</p></div>
+  </div>
+  <input placeholder="Filter tasks">
+  <ul>
+    <li><div class="title">Migrate customer address table to new schema</div>
+      <div class="icons">
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M3 21h18"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2m-9 0v14h10V6"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg></button>
+      </div></li>
+    <li><div class="title">Backfill order history for Q1</div>
+      <div class="icons">
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M3 21h18"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2m-9 0v14h10V6"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg></button>
+      </div></li>
+    <li><div class="title">Verify referential integrity across all tenant part</div>
+      <div class="icons">
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M3 21h18"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2m-9 0v14h10V6"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg></button>
+      </div></li>
+    <li><div class="title">Decommission legacy replication job</div>
+      <div class="icons">
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M3 21h18"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2m-9 0v14h10V6"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg></button>
+      </div></li>
+    <li><div class="title">Cut over read traffic to the new cluster</div>
+      <div class="icons">
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M3 21h18"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2m-9 0v14h10V6"/></svg></button>
+        <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg></button>
+      </div></li>
+  </ul>
+  <div class="chip">New &rsaquo;</div>
+  <div class="bar"><button>Publish project</button><button>Invite collaborators</button></div>
+</div>
+</body></html>
